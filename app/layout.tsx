@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import { Montserrat, Poiret_One } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default function RootLayout({
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={`${montserrat.variable} ${poiretOne.variable} font-sans antialiased`} // Use montserrat as the base font-sans
       >
+        <Header />
         {children}
       </body>
     </html>
