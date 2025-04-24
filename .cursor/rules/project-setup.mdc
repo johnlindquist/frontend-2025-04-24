@@ -6,5 +6,5 @@ alwaysApply: true
 # Dependencies and Assets
 
 - **Dependencies:** Project dependencies are managed using pnpm. See [package.json](mdc:package.json) for the list of dependencies and scripts. The exact versions are locked in [pnpm-lock.yaml](mdc:pnpm-lock.yaml).
-- **Static Assets:** Static files like images and fonts are served from the `public/` directory. The favicon is [public/favicon.ico](mdc:public/favicon.ico).
-- **Global Styles:** Base global styles and Tailwind directives are in [app/globals.css](mdc:app/globals.css).
+- **Static Assets:** Static files like images and fonts (if not using `next/font`) are served from the `public/` directory.
+- **Global Styles:** Base global styles, Tailwind directives, and custom CSS classes are in [app/globals.css](mdc:app/globals.css).

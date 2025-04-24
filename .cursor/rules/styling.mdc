@@ -1,0 +1,13 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Styling Guide
+
+Styling is handled through a combination of global CSS and Tailwind utility classes.
+
+- **Global Styles:** Base styles, Tailwind imports (`@import "tailwindcss"`), and custom Art Deco classes (`.art-deco-border`, `.art-deco-button`, etc.) are defined in [app/globals.css](mdc:app/globals.css).
+- **Tailwind Configuration:** Custom theme values (colors like `gold`, `darkGold`; fonts like `sans`, `heading`) are configured in [tailwind.config.ts](mdc:tailwind.config.ts).
+- **Fonts:** Google Fonts ('Montserrat', 'Poiret One') are loaded via `next/font` and applied through CSS variables defined in [app/layout.tsx](mdc:app/layout.tsx) and referenced in both [app/globals.css](mdc:app/globals.css) and [tailwind.config.ts](mdc:tailwind.config.ts).
+- **Component Styling:** Components primarily use Tailwind utility classes. Custom Art Deco styles are applied using the class names defined in `globals.css`.

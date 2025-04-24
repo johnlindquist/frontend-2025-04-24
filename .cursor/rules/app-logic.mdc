@@ -7,6 +7,6 @@ alwaysApply: true
 
 The primary application code resides in the `app/` directory.
 
-- **Layout:** The main application layout is defined in [app/layout.tsx](mdc:app/layout.tsx).
-- **Homepage:** The entry point and homepage content is in [app/page.tsx](mdc:app/page.tsx).
-- **Global Styles:** Global CSS styles are applied via [app/globals.css](mdc:app/globals.css).
+- **Layout:** The main application layout, including Header and Footer integration and font loading, is defined in [app/layout.tsx](mdc:app/layout.tsx).
+- **Homepage:** The entry point and main page content, composing various sections, is in [app/page.tsx](mdc:app/page.tsx).
+- **Global Styles:** Global CSS styles, including base Tailwind directives and custom Art Deco styles, are applied via [app/globals.css](mdc:app/globals.css).

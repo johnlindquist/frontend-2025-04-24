@@ -1,0 +1,20 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Components Overview
+
+Reusable UI components are located in the `components/` directory.
+
+- **Layout Components:**
+    - `Header`: Site header navigation ([components/Header.tsx](mdc:components/Header.tsx)).
+    - `Footer`: Site footer with copyright and links ([components/Footer.tsx](mdc:components/Footer.tsx)).
+- **Page Section Components:**
+    - `FlightSearchForm`: Main form for flight search ([components/FlightSearchForm.tsx](mdc:components/FlightSearchForm.tsx)).
+    - `DestinationCard`: Card displaying destination image, title, and price ([components/DestinationCard.tsx](mdc:components/DestinationCard.tsx)). Used in the "Explore Destinations" section.
+    - `ToolCard`: Card displaying an icon, title, and description for tools ([components/ToolCard.tsx](mdc:components/ToolCard.tsx)). Used in the "Useful Tools" section.
+    - `PopularDestinationThumbnail`: Smaller card for popular destination images and titles ([components/PopularDestinationThumbnail.tsx](mdc:components/PopularDestinationThumbnail.tsx)).
+    - `FaqSection`: Container for FAQ items ([components/FaqSection.tsx](mdc:components/FaqSection.tsx)).
+    - `FaqItem`: Individual expandable FAQ item using `<details>` ([components/FaqItem.tsx](mdc:components/FaqItem.tsx)).
+    - `PopularRoutesList`: Displays a list of popular flight route links ([components/PopularRoutesList.tsx](mdc:components/PopularRoutesList.tsx)).
