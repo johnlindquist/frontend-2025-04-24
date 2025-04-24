@@ -1,11 +1,59 @@
 import FlightSearchForm from "@/components/FlightSearchForm";
+import DestinationCard from "@/components/DestinationCard";
 // import Image from "next/image"; // Keep if needed for other components later
+
+// Placeholder data for destinations
+const destinations = [
+  {
+    imageUrl: "https://placehold.co/600x400/1a1a1a/daa520?text=Los+Angeles",
+    title: "Los Angeles",
+    price: "From $150",
+  },
+  {
+    imageUrl: "https://placehold.co/600x400/1a1a1a/daa520?text=Amsterdam",
+    title: "Amsterdam",
+    price: "From $750",
+  },
+  {
+    imageUrl: "https://placehold.co/600x400/1a1a1a/daa520?text=Tokyo",
+    title: "Tokyo",
+    price: "From $1100",
+  },
+  {
+    imageUrl: "https://placehold.co/600x400/1a1a1a/daa520?text=Paris",
+    title: "Paris",
+    price: "From $820",
+  },
+];
 
 export default function Home() {
   return (
     // Remove default styling, container handled by layout/components
     <div className="container mx-auto px-4 py-8"> 
       <FlightSearchForm />
+
+      {/* Explore Destinations Section */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-heading text-yellow-400 mb-6">
+          Explore Destinations from Salt Lake City
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {destinations.map((dest) => (
+            <DestinationCard
+              key={dest.title} // Use a unique key
+              imageUrl={dest.imageUrl}
+              title={dest.title}
+              price={dest.price}
+            />
+          ))}
+        </div>
+        {/* Optional: Add Map Placeholder Section if needed */}
+        {/* <div className="mt-8 p-4 art-deco-border rounded-none text-center bg-gray-800">
+          <p className="text-lg text-gray-400">Explore Map Feature Placeholder</p>
+          <img src="https://placehold.co/800x300/333333/daa520?text=Interactive+Map+Goes+Here" alt="Map Placeholder" className="mx-auto mt-4 opacity-50" />
+        </div> */}
+      </section>
+
       {/* Other page components will go here */}
     </div>
     /* Old structure removed:
