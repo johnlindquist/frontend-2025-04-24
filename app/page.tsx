@@ -1,5 +1,7 @@
 import FlightSearchForm from "@/components/FlightSearchForm";
 import DestinationCard from "@/components/DestinationCard";
+import ToolCard from "@/components/ToolCard";
+import { FaCalendarAlt, FaBell, FaChartLine } from 'react-icons/fa';
 // import Image from "next/image"; // Keep if needed for other components later
 
 // Placeholder data for destinations
@@ -23,6 +25,25 @@ const destinations = [
     imageUrl: "https://placehold.co/600x400/1a1a1a/daa520?text=Paris",
     title: "Paris",
     price: "From $820",
+  },
+];
+
+// Placeholder data for tools
+const tools = [
+  {
+    icon: FaCalendarAlt,
+    title: "Find the Cheapest Days",
+    description: "Visualize price trends across the month.",
+  },
+  {
+    icon: FaBell,
+    title: "Track Prices",
+    description: "Get alerts when prices change for your tracked flights.",
+  },
+  {
+    icon: FaChartLine,
+    title: "Insightful Tools",
+    description: "Use data to help choose your trip dates.",
   },
 ];
 
@@ -52,6 +73,23 @@ export default function Home() {
           <p className="text-lg text-gray-400">Explore Map Feature Placeholder</p>
           <img src="https://placehold.co/800x300/333333/daa520?text=Interactive+Map+Goes+Here" alt="Map Placeholder" className="mx-auto mt-4 opacity-50" />
         </div> */}
+      </section>
+
+      {/* Useful Tools Section */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-heading text-yellow-400 mb-6">
+          Useful Tools to Help You Find the Best Flight Deals
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {tools.map((tool) => (
+            <ToolCard
+              key={tool.title}
+              icon={tool.icon}
+              title={tool.title}
+              description={tool.description}
+            />
+          ))}
+        </div>
       </section>
 
       {/* Other page components will go here */}
