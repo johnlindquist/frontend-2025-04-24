@@ -1,6 +1,7 @@
 import FlightSearchForm from "@/components/FlightSearchForm";
 import DestinationCard from "@/components/DestinationCard";
 import ToolCard from "@/components/ToolCard";
+import PopularDestinationThumbnail from "@/components/PopularDestinationThumbnail";
 import { FaCalendarAlt, FaBell, FaChartLine } from 'react-icons/fa';
 // import Image from "next/image"; // Keep if needed for other components later
 
@@ -47,6 +48,30 @@ const tools = [
   },
 ];
 
+// Placeholder data for popular destinations (thumbnails)
+const popularDestinations = [
+  {
+    imageUrl: "https://placehold.co/300x200/1a1a1a/daa520?text=Denver",
+    title: "Denver",
+  },
+  {
+    imageUrl: "https://placehold.co/300x200/1a1a1a/daa520?text=Las+Vegas",
+    title: "Las Vegas",
+  },
+  {
+    imageUrl: "https://placehold.co/300x200/1a1a1a/daa520?text=Seattle",
+    title: "Seattle",
+  },
+  {
+    imageUrl: "https://placehold.co/300x200/1a1a1a/daa520?text=Phoenix",
+    title: "Phoenix",
+  },
+  {
+    imageUrl: "https://placehold.co/300x200/1a1a1a/daa520?text=Chicago",
+    title: "Chicago",
+  },
+];
+
 export default function Home() {
   return (
     // Remove default styling, container handled by layout/components
@@ -87,6 +112,22 @@ export default function Home() {
               icon={tool.icon}
               title={tool.title}
               description={tool.description}
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Popular Flight Destinations Section */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-heading text-yellow-400 mb-6">
+          Popular Flight Destinations
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {popularDestinations.map((dest) => (
+            <PopularDestinationThumbnail
+              key={dest.title}
+              imageUrl={dest.imageUrl}
+              title={dest.title}
             />
           ))}
         </div>
