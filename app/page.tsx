@@ -1,7 +1,14 @@
-import Image from "next/image";
+import FlightSearchForm from "@/components/FlightSearchForm";
+// import Image from "next/image"; // Keep if needed for other components later
 
 export default function Home() {
   return (
+    // Remove default styling, container handled by layout/components
+    <div className="container mx-auto px-4 py-8"> 
+      <FlightSearchForm />
+      {/* Other page components will go here */}
+    </div>
+    /* Old structure removed:
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
@@ -99,5 +106,6 @@ export default function Home() {
         </a>
       </footer>
     </div>
+    */
   );
 }
