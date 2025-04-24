@@ -25,7 +25,7 @@ const DestinationCard: React.FC<DestinationCardProps> = ({
           objectFit="cover" // Corresponds to object-cover
           onError={(e) => {
             // Optional: Fallback image handling if needed
-            (e.target as HTMLImageElement).src = 'https://placehold.co/600x400/cccccc/ffffff?text=Error'
+            (e.target as HTMLImageElement).src = 'https://placehold.co/600x400.png/cccccc/ffffff?text=Error'
           }}
         />
       </div>

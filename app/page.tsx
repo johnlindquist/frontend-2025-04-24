@@ -10,22 +10,22 @@ import { FaCalendarAlt, FaBell, FaChartLine } from 'react-icons/fa';
 // Placeholder data for destinations
 const destinations = [
   {
-    imageUrl: "https://placehold.co/600x400/1a1a1a/daa520?text=Los+Angeles",
+    imageUrl: "https://placehold.co/600x400.png/1a1a1a/daa520?text=Los+Angeles",
     title: "Los Angeles",
     price: "From $150",
   },
   {
-    imageUrl: "https://placehold.co/600x400/1a1a1a/daa520?text=Amsterdam",
+    imageUrl: "https://placehold.co/600x400.png/1a1a1a/daa520?text=Amsterdam",
     title: "Amsterdam",
     price: "From $750",
   },
   {
-    imageUrl: "https://placehold.co/600x400/1a1a1a/daa520?text=Tokyo",
+    imageUrl: "https://placehold.co/600x400.png/1a1a1a/daa520?text=Tokyo",
     title: "Tokyo",
     price: "From $1100",
   },
   {
-    imageUrl: "https://placehold.co/600x400/1a1a1a/daa520?text=Paris",
+    imageUrl: "https://placehold.co/600x400.png/1a1a1a/daa520?text=Paris",
     title: "Paris",
     price: "From $820",
   },
@@ -53,23 +53,23 @@ const tools = [
 // Placeholder data for popular destinations (thumbnails)
 const popularDestinations = [
   {
-    imageUrl: "https://placehold.co/300x200/1a1a1a/daa520?text=Denver",
+    imageUrl: "https://placehold.co/300x200.png/1a1a1a/daa520?text=Denver",
     title: "Denver",
   },
   {
-    imageUrl: "https://placehold.co/300x200/1a1a1a/daa520?text=Las+Vegas",
+    imageUrl: "https://placehold.co/300x200.png/1a1a1a/daa520?text=Las+Vegas",
     title: "Las Vegas",
   },
   {
-    imageUrl: "https://placehold.co/300x200/1a1a1a/daa520?text=Seattle",
+    imageUrl: "https://placehold.co/300x200.png/1a1a1a/daa520?text=Seattle",
     title: "Seattle",
   },
   {
-    imageUrl: "https://placehold.co/300x200/1a1a1a/daa520?text=Phoenix",
+    imageUrl: "https://placehold.co/300x200.png/1a1a1a/daa520?text=Phoenix",
     title: "Phoenix",
   },
   {
-    imageUrl: "https://placehold.co/300x200/1a1a1a/daa520?text=Chicago",
+    imageUrl: "https://placehold.co/300x200.png/1a1a1a/daa520?text=Chicago",
     title: "Chicago",
   },
 ];

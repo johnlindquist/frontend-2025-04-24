@@ -23,7 +23,7 @@ const PopularDestinationThumbnail: React.FC<PopularDestinationThumbnailProps> = 
           layout="fill"
           objectFit="cover"
           onError={(e) => {
-            (e.target as HTMLImageElement).src = 'https://placehold.co/300x200/cccccc/ffffff?text=Error'
+            (e.target as HTMLImageElement).src = 'https://placehold.co/300x200.png/cccccc/ffffff?text=Error'
           }}
         />
       </div>
