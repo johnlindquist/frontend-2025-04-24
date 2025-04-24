@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Montserrat, Poiret_One } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -40,10 +41,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className={`${montserrat.variable} ${poiretOne.variable} font-sans antialiased`} // Use montserrat as the base font-sans
+        className={`${montserrat.variable} ${poiretOne.variable} font-sans antialiased flex flex-col min-h-screen`} // Add flex layout to body
       >
         <Header />
-        {children}
+        <main className="flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );
