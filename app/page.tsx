@@ -77,9 +77,8 @@ const popularDestinations = [
 export default function Home() {
   return (
     // Remove default styling, container handled by layout/components
-    <div className="container mx-auto px-4 py-8"> 
+    <div className="container mx-auto px-4 py-8">
       <FlightSearchForm />
-
       {/* Explore Destinations Section */}
       <section className="mb-12">
         <h2 className="text-3xl font-heading text-yellow-400 mb-6">
@@ -101,7 +100,6 @@ export default function Home() {
           <img src="https://placehold.co/800x300/333333/daa520?text=Interactive+Map+Goes+Here" alt="Map Placeholder" className="mx-auto mt-4 opacity-50" />
         </div> */}
       </section>
-
       {/* Useful Tools Section */}
       <section className="mb-12">
         <h2 className="text-3xl font-heading text-yellow-400 mb-6">
@@ -118,7 +116,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
       {/* Popular Flight Destinations Section */}
       <section className="mb-12">
         <h2 className="text-3xl font-heading text-yellow-400 mb-6">
@@ -134,13 +131,11 @@ export default function Home() {
           ))}
         </div>
       </section>
-
       {/* FAQ & Popular Routes Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
         <FaqSection />
         <PopularRoutesList />
       </section>
-
       {/* Other page components will go here */}
     </div>
     /* Old structure removed:
