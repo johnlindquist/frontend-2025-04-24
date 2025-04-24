@@ -1,15 +1,28 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat, Poiret_One } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+
+const montserrat = Montserrat({
   subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["400", "700"], // Include weights used in the mock/theme if known
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poiretOne = Poiret_One({
   subsets: ["latin"],
+  variable: "--font-poiret-one",
+  weight: ["400"], // Poiret One typically only has 400
 });
 
 export const metadata: Metadata = {
@@ -25,7 +38,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} ${poiretOne.variable} font-sans antialiased`} // Use montserrat as the base font-sans
       >
         {children}
       </body>
