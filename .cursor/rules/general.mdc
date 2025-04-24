@@ -1,0 +1,9 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# General Project Information
+
+- **README:** For a general overview, setup instructions, and scripts, refer to the [README.md](mdc:README.md).
+- **Git Ignore:** Files and directories ignored by Git are listed in [.gitignore](mdc:.gitignore).

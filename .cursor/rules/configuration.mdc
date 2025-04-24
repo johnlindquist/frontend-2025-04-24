@@ -1,0 +1,14 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# Configuration Files
+
+This project uses several configuration files:
+
+- **Next.js:** Core Next.js settings are in [next.config.ts](mdc:next.config.ts).
+- **OpenNext (Cloudflare Adapter):** Configuration for the Cloudflare adapter is in [open-next.config.ts](mdc:open-next.config.ts).
+- **Cloudflare Workers:** Wrangler configuration for Cloudflare deployments is managed in [wrangler.jsonc](mdc:wrangler.jsonc). Local development environment variables for Cloudflare are in [.dev.vars](mdc:.dev.vars).
+- **TypeScript:** TypeScript settings are defined in [tsconfig.json](mdc:tsconfig.json).
+- **Tailwind/PostCSS:** PostCSS configuration, used by Tailwind CSS, is in [postcss.config.mjs](mdc:postcss.config.mjs).
