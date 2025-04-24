@@ -2,6 +2,8 @@ import FlightSearchForm from "@/components/FlightSearchForm";
 import DestinationCard from "@/components/DestinationCard";
 import ToolCard from "@/components/ToolCard";
 import PopularDestinationThumbnail from "@/components/PopularDestinationThumbnail";
+import FaqSection from "@/components/FaqSection";
+import PopularRoutesList from "@/components/PopularRoutesList";
 import { FaCalendarAlt, FaBell, FaChartLine } from 'react-icons/fa';
 // import Image from "next/image"; // Keep if needed for other components later
 
@@ -131,6 +133,12 @@ export default function Home() {
             />
           ))}
         </div>
+      </section>
+
+      {/* FAQ & Popular Routes Section */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+        <FaqSection />
+        <PopularRoutesList />
       </section>
 
       {/* Other page components will go here */}
